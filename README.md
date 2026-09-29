@@ -1,4 +1,4 @@
-# Hyperlocal Velocity
+# Blinkit Product Case Study
 
 **A portfolio exploration of trustworthy delivery promises during peak-hour quick commerce.**
 
