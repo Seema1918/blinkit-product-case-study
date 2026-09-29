@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;font-family:'Plus Jakarta Sans',sans-serif;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error": "#ffffff", "primary-fixed": "#8ffb87", "background": "#f8f9ff", "surface-tint": "#006e16", "on-background": "#0b1c30", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#584400", "on-primary-fixed-variant": "#00530e", "on-primary-container": "#e0ffd7", "outline-variant": "#becab7", "error": "#ba1a1a", "inverse-primary": "#74dd6e", "surface-container-highest": "#d3e4fe", "tertiary-fixed-dim": "#edc13d", "on-secondary-container": "#5c647a", "on-surface": "#0b1c30", "tertiary-container": "#cfa620", "secondary": "#565e74", "on-primary": "#ffffff", "on-tertiary-container": "#4f3d00", "error-container": "#ffdad6", "tertiary": "#755b00", "on-secondary-fixed": "#131b2e", "secondary-fixed": "#dae2fd", "surface-variant": "#d3e4fe", "secondary-container": "#dae2fd", "on-tertiary": "#ffffff", "surface-bright": "#f8f9ff", "on-surface-variant": "#3f4a3c", "surface": "#f8f9ff", "surface-container-lowest": "#ffffff", "surface-dim": "#cbdbf5", "primary-fixed-dim": "#74dd6e", "on-secondary": "#ffffff", "primary": "#006714", "tertiary-fixed": "#ffe08f", "inverse-surface": "#213145", "on-secondary-fixed-variant": "#3f465c", "primary-container": "#0c831f", "surface-container-low": "#eff4ff", "inverse-on-surface": "#eaf1ff", "outline": "#6f7a6a", "surface-container-high": "#dce9ff", "secondary-fixed-dim": "#bec6e0", "on-primary-fixed": "#002203", "on-tertiary-fixed": "#241a00", "surface-container": "#e5eeff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-lg": "1.5rem", "margin-md": "1.5rem", "gutter-sm": "0.5rem", "gutter": "1rem", "space-lg": "1.5rem", "space-xl": "2rem", "margin-lg": "2.5rem", "margin": "1rem", "space-md": "1rem" }, fontFamily: { "numeric-price": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "numeric-price": ["15px", { "lineHeight": "18px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "800" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-4 flex items-center justify-between gap-3"><div class="flex items-center gap-2 min-w-0 flex-1"><button class="w-11 h-11 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-low transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Live Map Tracking</h1></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex-1 flex flex-col relative w-full pt-14 pb-safe bg-surface"><div class="flex flex-col w-full">
+<!-- Status Context Sub-header -->
+<div class="px-4 py-2.5 bg-surface-container-low flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<div class="relative flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping absolute opacity-75"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary relative"></span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Order #QB-89421</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm tracking-wide uppercase">
+      ⚡ Live Dispatch
+    </span>
+</div>
+<!-- Interactive Map Section -->
+<div class="relative w-full h-80 bg-surface-container overflow-hidden">
+<!-- Static Map Background via Google Maps Static pipeline -->
+<div class="w-full h-full bg-cover bg-center" data-location="Indiranagar to Green Glen Layout Bangalore" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNTM0EZszUZ5P-Xlxxsg-vFYw4ohwN82aTD2KnzI0UiIjnSr2CEYuAbPfAfx11oGRVZ5rdn-6IkSaSK_3mw2DkykBA-5pyYjNx1v59q6zaPVS9XZB48b7oxGuVPlh5A9gKI6DShBcl9qrYAf8C5lgpwNkMlVvOo6LB1q_AWsV-FVToclgThte0fEf8TaFGmFNDgG2HyBXlAgLMvNrdf4NcbmjqBYT7tCgnZdS9D_JpxtB7LDIrUruv')"></div>
+<!-- Map Route SVG Overlay -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" fill="none" preserveaspectratio="none" viewbox="0 0 380 320">
+<!-- Route path shadow/glow -->
+<path d="M 50 250 C 90 230, 140 210, 170 160 C 200 110, 240 100, 320 60" stroke="#006714" stroke-linecap="round" stroke-opacity="0.2" stroke-width="8"></path>
+<!-- Traveled line -->
+<path d="M 50 250 C 90 230, 140 210, 170 160" stroke="#006714" stroke-linecap="round" stroke-width="5"></path>
+<!-- Remaining route with dashed pattern -->
+<path d="M 170 160 C 200 110, 240 100, 320 60" stroke="#006714" stroke-dasharray="6 6" stroke-linecap="round" stroke-width="4"></path>
+<!-- Dark Store Start Marker -->
+<circle cx="50" cy="250" fill="#0b1c30" r="7"></circle>
+<circle cx="50" cy="250" fill="#ffffff" r="3"></circle>
+</svg>
+<!-- Dark Store Label -->
+<div class="absolute bottom-6 left-3 bg-inverse-surface/90 backdrop-blur-md px-2.5 py-1 rounded-lg shadow-md flex items-center gap-1.5 pointer-events-none">
+<span class="material-symbols-outlined text-[13px] text-inverse-on-surface">storefront</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface">Indiranagar Dark Store</span>
+</div>
+<!-- Moving Rider Marker on Route (Pos: 170px, 160px) -->
+<div class="absolute left-[44%] top-[48%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-auto">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-12 h-12 rounded-full bg-primary opacity-30 animate-ping"></span>
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-xl text-on-primary">
+<span class="material-symbols-outlined text-[20px]">two_wheeler</span>
+</div>
+</div>
+<div class="mt-1 px-2.5 py-0.5 rounded-full bg-inverse-surface/95 backdrop-blur-md shadow-md text-center">
+<span class="font-label-sm text-label-sm text-inverse-on-surface whitespace-nowrap">Ramesh • 22 km/h</span>
+</div>
+</div>
+<!-- Doorstep Destination Pin -->
+<div class="absolute right-7 top-10 flex flex-col items-center pointer-events-none">
+<div class="w-9 h-9 rounded-full bg-error flex items-center justify-center shadow-lg text-on-error animate-bounce">
+<span class="material-symbols-outlined text-[18px]">home</span>
+</div>
+<div class="mt-1 px-2 py-0.5 rounded-md bg-inverse-surface/90 shadow text-center">
+<span class="font-label-sm text-label-sm text-inverse-on-surface">Doorstep</span>
+</div>
+</div>
+<!-- Live Telemetry Floating Pill -->
+<div class="absolute top-3 left-3 right-3 flex justify-center pointer-events-none">
+<div class="bg-surface-container-lowest/95 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-2">
+<span class="text-tertiary-container font-headline-sm text-headline-sm">⚡</span>
+<span class="font-label-md text-label-md text-on-surface truncate">1.4 km away • 100ft Rd • GPS ±2m Precision</span>
+</div>
+</div>
+</div>
+<!-- Tracking Content Sheet -->
+<div class="flex flex-col px-4 pt-4 pb-6 space-y-4 bg-surface">
+<!-- Hero ETA Card -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Estimated Arrival</span>
+<div class="flex items-baseline gap-2 mt-0.5">
+<span class="font-headline-xl-mobile text-headline-xl-mobile text-primary font-extrabold tracking-tight">⚡ 7:42 PM</span>
+<span class="font-label-md text-label-md text-secondary">(11 mins)</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> On Track
+          </span>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Updated just now</span>
+</div>
+</div>
+<!-- Micro-Progress Bar -->
+<div class="space-y-1.5 pt-1">
+<div class="w-full h-2.5 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="h-full bg-primary rounded-full transition-all duration-700 ease-out" style="width: 72%;"></div>
+</div>
+<div class="flex justify-between items-center text-secondary">
+<span class="font-body-sm text-body-sm">Dispatched 7:35 PM</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">72% Completed</span>
+<span class="font-body-sm text-body-sm">ETA 7:42 PM</span>
+</div>
+</div>
+</div>
+<!-- Rider Profile & Interactive Dispatch Card -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm space-y-3.5">
+<div class="flex items-center gap-3">
+<div class="relative w-14 h-14 rounded-full overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up warm and cheerful portrait photograph of Ramesh Kumar, an Indian delivery partner in a clean green branded jacket with bright smile against an outdoor urban backdrop with natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXtiRS4kCr4UIZAl7TakDG-IofhXqABbsQSpG8o0amkU1jTSx5VZZoxqI6--FLWGBG_ZCcFwKiAZLuzwBH1XUGaHMVZdsj3esKcNGxgXVTkuI_fotso2DLOvVcWqYZ60Wo6l5_vsYH_XFY6gZ63-wp6u2repocIBMrcqsLPoURPVmWHPOTKXPBWDLpAukO2Xi1uP3Zgof6ZSLZH8CKt8BYd_OEeZ3YtNmci39APqrJG1lOb9JeTPXK"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Ramesh Kumar</h2>
+<div class="flex items-center gap-1 bg-tertiary-fixed px-2 py-0.5 rounded-full shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed">4.9</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-secondary truncate">Ather 450X EV • KA 03 HX 8821</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">verified</span> Vaccinated
+            </span>
+<span class="text-secondary font-label-sm text-label-sm">•</span>
+<span class="font-label-sm text-label-sm text-secondary">Temp: 98.2°F</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="grid grid-cols-2 gap-2.5 pt-1">
+<a class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md active:scale-95 transition-transform" href="tel:0800000000">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call Ramesh</span>
+</a>
+<button class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md active:scale-95 transition-transform" id="instructionsBtn">
+<span class="material-symbols-outlined text-[18px]">chat_bubble_outline</span>
+<span>Instructions</span>
+</button>
+</div>
+<!-- Drop Note Banner -->
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">doorbell</span>
+<p class="font-body-sm text-body-sm text-on-surface truncate">Ring doorbell once and leave outside flat door.</p>
+</div>
+<button class="font-label-md text-label-md text-primary shrink-0 hover:underline">Edit</button>
+</div>
+</div>
+<!-- 5-Stage Live Order Tracker -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Delivery Milestones</h3>
+<div class="relative pl-6 space-y-5">
+<!-- Connecting Vertical Line -->
+<div class="absolute left-2.5 top-2 bottom-3 w-0.5 bg-surface-container-high -translate-x-1/2"></div>
+<div class="absolute left-2.5 top-2 h-[68%] w-0.5 bg-primary -translate-x-1/2"></div>
+<!-- Stage 1: Completed -->
+<div class="relative flex items-start gap-3">
+<div class="absolute -left-6 w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+<div class="flex-1 flex items-baseline justify-between">
+<span class="font-body-md text-body-md text-on-surface">Order Confirmed</span>
+<span class="font-body-sm text-body-sm text-secondary">7:28 PM</span>
+</div>
+</div>
+<!-- Stage 2: Completed -->
+<div class="relative flex items-start gap-3">
+<div class="absolute -left-6 w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+<div class="flex-1 flex items-baseline justify-between">
+<span class="font-body-md text-body-md text-on-surface">Picking in Dark Store (Aisle 4)</span>
+<span class="font-body-sm text-body-sm text-secondary">7:30 PM</span>
+</div>
+</div>
+<!-- Stage 3: Completed -->
+<div class="relative flex items-start gap-3">
+<div class="absolute -left-6 w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+<div class="flex-1 flex items-baseline justify-between">
+<span class="font-body-md text-body-md text-on-surface">Packed &amp; Quality Checked</span>
+<span class="font-body-sm text-body-sm text-secondary">7:33 PM</span>
+</div>
+</div>
+<!-- Stage 4: Active Stage -->
+<div class="relative flex items-start gap-3">
+<div class="absolute -left-6 w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md animate-pulse">
+<span class="material-symbols-outlined text-[12px]">electric_moped</span>
+</div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-primary">Rider Dispatched</span>
+<span class="font-label-md text-label-md text-primary">7:35 PM</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">Ramesh is moving smoothly along 100ft road.</p>
+</div>
+</div>
+<!-- Stage 5: Pending Stage -->
+<div class="relative flex items-start gap-3">
+<div class="absolute -left-6 w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-outline-variant"></div>
+</div>
+<div class="flex-1 flex items-baseline justify-between">
+<span class="font-body-md text-body-md text-secondary">Arriving at Your Doorstep</span>
+<span class="font-body-sm text-body-sm text-secondary">Est. 7:42 PM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Algorithmic Transparency Box -->
+<div class="bg-surface-container-low rounded-xl p-4 shadow-sm space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">psychology</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Why this ETA is accurate (99.4%)</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Calculated using real-time store throughput (Indiranagar queue: normal), traffic telemetry on 100ft Road (22 km/h avg velocity), and a tailored 2-minute gate security clearance window.
+      </p>
+<div class="grid grid-cols-3 gap-2 pt-1">
+<div class="bg-surface-container-lowest rounded-lg p-2 text-center">
+<span class="font-label-sm text-label-sm text-secondary block">Dark Store Load</span>
+<span class="font-label-md text-label-md text-primary font-bold">Optimal</span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-2 text-center">
+<span class="font-label-sm text-label-sm text-secondary block">Transit Speed</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">22 km/h</span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-2 text-center">
+<span class="font-label-sm text-label-sm text-secondary block">Gate Buffer</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">+2 mins</span>
+</div>
+</div>
+</div>
+<!-- Order Items Summary Teaser Drawer -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<button class="w-full p-4 flex items-center justify-between text-left hover:bg-surface-container-low transition-colors" id="toggleDrawerBtn">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface">4 items in this order</span>
+<span class="font-numeric-price text-numeric-price text-secondary block">Total: ₹191 • Paid online</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200" id="drawerArrow">expand_more</span>
+</button>
+<!-- Expandable items list -->
+<div class="hidden px-4 pb-4 space-y-3 pt-1" id="itemsDrawer">
+<div class="flex items-center justify-between py-1.5 bg-surface-container-low px-3 rounded-lg">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Fresh carton of creamy whole dairy milk in soft commercial studio lighting with clean white packaging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJXTEs7vARhlRk2cpXZDU0sH-U1e-BoBg85UJM2RkxCchtCP-n03Hh_mXhje9apm6S5p5_r4DvsPlzyZBr9Bgp0wa2UalJROpZHfeAZY4iKFotK21_waA2atqD0wNH1ADVWGT5-gPJoo0gKrc2glAmlJ5cbE9d947zH3OYm-6KJ4zsOKspleHq1dC-v4h4KM2_thPEn-SY6j62CvM4JQX9ls8s5ifCr937G1YEoXFrwx3wdEcRcILb"/>
+</div>
+<div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Fresh Farm Whole Milk</p>
+<p class="font-label-sm text-label-sm text-secondary">500 ml • 1 unit</p>
+</div>
+</div>
+<span class="font-numeric-price text-numeric-price text-on-surface">₹32</span>
+</div>
+<div class="flex items-center justify-between py-1.5 bg-surface-container-low px-3 rounded-lg">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Bunch of fresh vibrant yellow bananas arranged organically on clean minimalist studio surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC930c80mheNG0Fc0mrkiktZmBbalbQnch1-4Q0LQrFJvpVjgnEoLETvcUzJrrfrNa2iEpsV1buhQQAqWnED1IIv4UAZS_JedIANrxCpUDrueAUUKu38y66PJwrVgOYHQkw4HQN4FjIza2zRlfkxcJbtSMlzVlHCsEA8uonqZsoKS0Kp_AHdgS9sEJOVDHiiIS3yoxPAXjZAA2EaXYyeXVd4V_udiyBMPvGNT1c__Y6DnDzrgQq7rod"/>
+</div>
+<div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Robusta Bananas</p>
+<p class="font-label-sm text-label-sm text-secondary">500 g • 1 pack</p>
+</div>
+</div>
+<span class="font-numeric-price text-numeric-price text-on-surface">₹45</span>
+</div>
+<div class="flex items-center justify-between py-1.5 bg-surface-container-low px-3 rounded-lg">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Loaf of whole wheat sliced brown artisanal sandwich bread on bright daylight bakery background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN3q15Feyym-Mc5JRzDdQR5BqNIvZapA7YmliI6iMEZ8yG_2hY_7_bzPj4MFOcee_C9PG6PPbbbaxpHbROTqSUKQZYIUDu0MnoJBsFKw3WrQwGGAQo1hHmeHcjNG-MeNOB0YMIYby8giBaPi1iN653JHB3Kb3TzRpkYQ-ZfpGbeMZXgi9jHqkJX7PptGJgS0t5ygR_RmTFlvC4jl0uFnsCpcr6A4_QY8GuffvlktPNtLK9h-TX-I1P"/>
+</div>
+<div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">100% Whole Wheat Bread</p>
+<p class="font-label-sm text-label-sm text-secondary">400 g • 1 unit</p>
+</div>
+</div>
+<span class="font-numeric-price text-numeric-price text-on-surface">₹55</span>
+</div>
+<div class="flex items-center justify-between py-1.5 bg-surface-container-low px-3 rounded-lg">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Fresh crisp cluster of organic green cilantro coriander leaves with morning water dew droplets on neutral white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtEEic2aUnVjWbb4ZUnWF56NgG_-tkUaBoaqKc7TI6jXwtLQHVJ5JfL4wvDtGM7hJt3q0JqRLBJjWFsZLvbTk_GO-_R-06VcnU6BdV87i5SW1QrZihQmsQr5V1Q2byoD3i2Ve493eJjB1FrB8njt0pGJKPy3Khagm3cbOQoS2r386CkGxjqLdDsBRqNPW-r8bhTXoBq5W8EvcGi66iyPVXc8qgmK2Oz-DXIo94EzUXLs_cXmqixBWD"/>
+</div>
+<div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Fresh Coriander Bunch</p>
+<p class="font-label-sm text-label-sm text-secondary">100 g • 2 units</p>
+</div>
+</div>
+<span class="font-numeric-price text-numeric-price text-on-surface">₹59</span>
+</div>
+</div>
+</div>
+<!-- Help & Support Anchor Link -->
+<div class="flex justify-center items-center py-2">
+<button class="flex items-center gap-1.5 text-secondary hover:text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+<span>Need help with this delivery? Quick Support</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const toggleBtn = document.getElementById('toggleDrawerBtn');
+    const drawer = document.getElementById('itemsDrawer');
+    const arrow = document.getElementById('drawerArrow');
+
+    if (toggleBtn && drawer && arrow) {
+      toggleBtn.addEventListener('click', function() {
+        const isHidden = drawer.classList.contains('hidden');
+        if (isHidden) {
+          drawer.classList.remove('hidden');
+          arrow.style.transform = 'rotate(180deg)';
+        } else {
+          drawer.classList.add('hidden');
+          arrow.style.transform = 'rotate(0deg)';
+        }
+      });
+    }
+
+    const instructionsBtn = document.getElementById('instructionsBtn');
+    if (instructionsBtn) {
+      instructionsBtn.addEventListener('click', function() {
+        alert('Instruction sent to Ramesh: "Ring doorbell once and leave outside flat door."');
+      });
+    }
+  })();
+</script></main></body></html>

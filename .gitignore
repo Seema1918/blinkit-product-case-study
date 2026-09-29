@@ -1,0 +1,20 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+coverage/
+
+# Local environment and logs
+.env
+.env.*
+!.env.example
+*.log
+
+# Original source brief; do not publish
+/PRD- Blinkit.pdf

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;font-family:'Plus Jakarta Sans',sans-serif;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error": "#ffffff", "primary-fixed": "#8ffb87", "background": "#f8f9ff", "surface-tint": "#006e16", "on-background": "#0b1c30", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#584400", "on-primary-fixed-variant": "#00530e", "on-primary-container": "#e0ffd7", "outline-variant": "#becab7", "error": "#ba1a1a", "inverse-primary": "#74dd6e", "surface-container-highest": "#d3e4fe", "tertiary-fixed-dim": "#edc13d", "on-secondary-container": "#5c647a", "on-surface": "#0b1c30", "tertiary-container": "#cfa620", "secondary": "#565e74", "on-primary": "#ffffff", "on-tertiary-container": "#4f3d00", "error-container": "#ffdad6", "tertiary": "#755b00", "on-secondary-fixed": "#131b2e", "secondary-fixed": "#dae2fd", "surface-variant": "#d3e4fe", "secondary-container": "#dae2fd", "on-tertiary": "#ffffff", "surface-bright": "#f8f9ff", "on-surface-variant": "#3f4a3c", "surface": "#f8f9ff", "surface-container-lowest": "#ffffff", "surface-dim": "#cbdbf5", "primary-fixed-dim": "#74dd6e", "on-secondary": "#ffffff", "primary": "#006714", "tertiary-fixed": "#ffe08f", "inverse-surface": "#213145", "on-secondary-fixed-variant": "#3f465c", "primary-container": "#0c831f", "surface-container-low": "#eff4ff", "inverse-on-surface": "#eaf1ff", "outline": "#6f7a6a", "surface-container-high": "#dce9ff", "secondary-fixed-dim": "#bec6e0", "on-primary-fixed": "#002203", "on-tertiary-fixed": "#241a00", "surface-container": "#e5eeff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-lg": "1.5rem", "margin-md": "1.5rem", "gutter-sm": "0.5rem", "gutter": "1rem", "space-lg": "1.5rem", "space-xl": "2rem", "margin-lg": "2.5rem", "margin": "1rem", "space-md": "1rem" }, fontFamily: { "numeric-price": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "numeric-price": ["15px", { "lineHeight": "18px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "800" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-4 flex items-center justify-between gap-3"><div class="flex items-center gap-2 min-w-0 flex-1"><button class="w-11 h-11 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-low transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Live Map Tracking</h1></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex-1 flex flex-col relative w-full pt-14 pb-safe bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Status Context Bar -->
+<div class="w-full bg-surface-container-low px-4 py-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span>
+</span>
+<span class="font-label-md text-label-md text-on-surface">Live Order Status</span>
+</div>
+<div class="bg-surface-container px-2.5 py-0.5 rounded-full">
+<span class="font-label-sm text-label-sm text-secondary tracking-wider">ORDER #QB-89421</span>
+</div>
+</div>
+<div class="p-4 space-y-4">
+<!-- Calm Proactive Delay Card -->
+<div class="bg-surface-container-high rounded-xl p-4 shadow-sm relative overflow-hidden transition-all duration-300" id="delayCard">
+<!-- Ambient Glow Subtle Strip -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-tertiary"></div>
+<!-- Header with Tag -->
+<div class="flex items-start justify-between gap-2 pt-1 mb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center flex-shrink-0 text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">nest_clock_farsight_analog</span>
+</div>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded-full uppercase tracking-wider">
+            PROACTIVE NOTIFICATION
+          </span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+          1m ago
+        </span>
+</div>
+<!-- Alert Title & Reassuring Copy -->
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">
+        Your order will arrive 7 minutes later than planned
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+        We detected high dark store packing rush at Indiranagar &amp; heavy traffic around 100ft Road junction. We're updating you 10 minutes before your original delivery window so you remain fully informed and in control.
+      </p>
+<!-- Time Delta Visual Pill -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm mb-3">
+<div class="flex items-center justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Original ETA</span>
+<span class="font-body-md text-body-md line-through text-outline">7:42 PM</span>
+</div>
+<div class="flex items-center justify-center w-7 h-7 rounded-full bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[18px]">trending_flat</span>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">+7 mins</span>
+<span class="font-label-sm text-label-sm text-tertiary">Revised ETA</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">7:49 PM</span>
+</div>
+</div>
+</div>
+<!-- Punctuality Guarantee Compensation -->
+<div class="bg-primary-fixed/30 rounded-xl p-3 mb-4 flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface">₹50 Auto-Credited to Wallet</span>
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Instant recalculation courtesy credit applied for next order.</p>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-2">
+<button class="flex-1 bg-primary text-on-primary py-3 px-4 rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" id="ackButton" onclick="acknowledgeDelay()">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Acknowledge ETA</span>
+</button>
+<button class="bg-surface-container-lowest text-on-surface py-3 px-4 rounded-xl font-label-lg text-label-lg shadow-sm flex items-center justify-center gap-1.5 active:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+<span>Priority Help</span>
+</button>
+</div>
+</div>
+<!-- Live Map & Dispatch Radar -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<div class="relative w-full h-52">
+<!-- Interactive Static Map Component -->
+<div class="w-full h-full bg-cover bg-center" data-location="Indiranagar 100ft Road Bangalore India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBjTaWKfeTlmYpUIkyBL2-F4j_WqiewvEZbzY53WXgjqFJCNdJOdKLzgvXAmJhcNzqNoXOXFBWcyLDlPwOQ5moGEBNUWTJmTjV0MKSHMJ8jMaeWZsZi89IMV2uNqmktAlTJDlSi_L1ERfpDrjSiQRZ8ritr_etn3nOO2PUROTt2NlM9e9k45egyVdABD7c7-0WyC_TeVceffSRIRjTmXf6ZshVkRmrcFa7Hze5zL2DQaS0IyfbbjTPo')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent"></div>
+<!-- Dynamic Congestion Pill -->
+<div class="absolute top-3 left-3 bg-inverse-surface/90 text-inverse-on-surface backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-2 shadow-md">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">traffic</span>
+<span class="font-label-sm text-label-sm tracking-wide">100ft Rd: Moderate Volume (+3m delay factored)</span>
+</div>
+<!-- Proximity Token & Live Status Floating Footer -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md p-3 rounded-xl shadow-lg flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="relative">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">two_wheeler</span>
+</div>
+<span class="absolute -top-1 -right-1 flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Ramesh is moving</p>
+<p class="font-body-sm text-body-sm text-secondary">1.1 km away • Arriving in ~8 mins</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface px-2.5 py-1 rounded-full font-bold">
+            7:49 PM
+          </span>
+</div>
+</div>
+</div>
+<!-- Active Milestones Timeline -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm">
+<h3 class="font-label-lg text-label-lg text-on-surface mb-3.5 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">route</span>
+        Live Order Journey
+      </h3>
+<div class="relative pl-6 space-y-5">
+<!-- Vertical connector line -->
+<div class="absolute left-2.5 top-2 bottom-3 w-0.5 bg-surface-container-highest"></div>
+<!-- Node 1: Completed -->
+<div class="relative flex items-start gap-3">
+<div class="absolute -left-6 top-0.5 w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Order Packed at Dark Store</p>
+<p class="font-body-sm text-body-sm text-secondary">Indiranagar Mini-Hub • 7:34 PM</p>
+</div>
+</div>
+<!-- Node 2: In-Transit (Active) -->
+<div class="relative flex items-start gap-3">
+<div class="absolute -left-6 top-0.5 w-5 h-5 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center ring-4 ring-surface-container-lowest animate-pulse">
+<span class="material-symbols-outlined text-[14px]">delivery_dining</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<p class="font-label-md text-label-md text-on-surface">Rider on Delivery Route</p>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.2 rounded font-bold">NAVIGATING</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Rerouted via 12th Main to bypass bottleneck</p>
+</div>
+</div>
+<!-- Node 3: Doorstep Delivery (Adjusted) -->
+<div class="relative flex items-start gap-3">
+<div class="absolute -left-6 top-0.5 w-5 h-5 rounded-full bg-surface-container-highest text-secondary flex items-center justify-center ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[14px]">home_pin</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Delivered to Doorstep</p>
+<div class="flex items-center gap-1.5">
+<span class="font-body-sm text-body-sm line-through text-outline">7:42 PM</span>
+<span class="font-label-md text-label-md text-primary font-bold">7:49 PM revised</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Rider Contact Card -->
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Friendly delivery partner headshot wearing clean green uniform and safety helmet, smiling warmly with bright natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbWa1vXZK_FwIAr7cP1XMgBqjERuv338uNtOcYYWhzzDKHJS62EaEG-b9k4rUm0rMFQ5u0YkA5AjZGdCn_0MMagjzc82AAv3-HfD4wT4NARVH9RrLwRTwalBvF65_wO7Pe6ZWXpSxDaXr_v8_CCYtXV12G_8U3mJg5tT-P-O-9f86hEHj_m8EPCo1ZW_3RVdk1GvwkVZ7GtC72h3LBUP7XCkvvQ9xCDRW_f-okb7Nz9l9nUGe9ZjkG"/>
+<div class="absolute -bottom-1 -right-1 bg-surface-container-lowest rounded-full p-0.5 shadow-sm">
+<div class="bg-primary text-on-primary w-4 h-4 rounded-full flex items-center justify-center text-[10px] font-bold">
+              ✓
+            </div>
+</div>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">Ramesh Kumar</h4>
+<div class="flex items-center bg-tertiary-fixed px-1.5 py-0.5 rounded text-[11px] font-bold text-on-tertiary-fixed">
+              ★ 4.9
+            </div>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Vaccinated &amp; EV delivery trained</p>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<a class="w-10 h-10 rounded-full bg-surface-container-low text-primary flex items-center justify-center active:bg-surface-container-high transition-colors" href="tel:55501928">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</a>
+<button class="w-10 h-10 rounded-full bg-surface-container-low text-primary flex items-center justify-center active:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</button>
+</div>
+</div>
+<!-- Express Tote Basket Preview -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">shopping_bag</span>
+<span class="font-label-lg text-label-lg text-on-surface">Express Tote</span>
+<span class="bg-surface-container px-2 py-0.5 rounded-full font-label-sm text-label-sm text-secondary">3 items</span>
+</div>
+<div class="flex items-center gap-1 text-primary font-label-md text-label-md">
+<span>₹225</span>
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-1.5 py-0.5 rounded">UPI PAID</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<div class="bg-surface-container-low rounded-lg p-2 flex flex-col items-center text-center">
+<img class="w-12 h-12 rounded object-contain mb-1" data-alt="Crisp, fresh glass bottle of cold homogenized whole farm milk with condensation droplets on white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV3B5b3PxnwOSu--M1YH8HKG03YRJlaZbLA3QEpVaXR6Iq10MTCA5v_TNsFswdW9GrtnK6QnaxwqQRDwP-GZFNFpbRyyLRbHEB7pTVyre1usUixAy87cPyee8UmiLC1G1RzQovU-K8CPC3PujpKSipokNpXbGBcm9Gp8IS32b7hQ2tRGeX5772DsahN9SInuBCZ_Ix2-3ujENDpWgl3uwe1HrqFPb2mIoqdWIEBE0mjTN3UleWWTE5"/>
+<span class="font-label-sm text-label-sm text-on-surface truncate w-full">Farm Milk 1L</span>
+<span class="font-body-sm text-body-sm text-secondary">₹68</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex flex-col items-center text-center">
+<img class="w-12 h-12 rounded object-contain mb-1" data-alt="Loaf of freshly sliced artisan whole wheat sourdough bread in clear eco pouch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC6Ocm6mgXCMi-CNkhhL6RP5OnzIDItP_H_ENg1YBj9rZ9shNcrHojsAtre-VpVBu0Osn8_02OQ0WjrS6uDiO75iAUKqKLElxyuFrAcpbubX1_O38hUZGf7YUT7DY1xUiZ7iI39k_3qpuBW92abU41BEEra318te7FkhH5uE-ek-n8qc3wTVXyojyFjQf2AKlflXffzTIlo-QmKoeEjMhZnykbwXjyScnkXfDjQ9PUKMn8cunQnKk_"/>
+<span class="font-label-sm text-label-sm text-on-surface truncate w-full">Sourdough Loaf</span>
+<span class="font-body-sm text-body-sm text-secondary">₹85</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex flex-col items-center text-center">
+<img class="w-12 h-12 rounded object-contain mb-1" data-alt="Pack of six organic brown farm fresh eggs in recycled cardboard carton" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9UkLkwI_UrGPpVDJqnxIKMV6-I2vqGOctJu3s_te8dLlT5Z1SzNdk5ASsoJghJQN_xWCLb2V_9RWAdjrAQw6oy2VKenmio7YjKVWiDPa6Of3da6fPTDKDwUJunpBt8m37445_yZ2poGUcGGnKrCqIUS84vYEPQlsQ_nRb6M-GNPQmfZpucYjIKonfrfkqldlE9BPBJu8LRLzKVH76c_HJMvx5hwwLBIFsE0pxDNl45yWQzOAZM1fA"/>
+<span class="font-label-sm text-label-sm text-on-surface truncate w-full">Brown Eggs (6)</span>
+<span class="font-body-sm text-body-sm text-secondary">₹72</span>
+</div>
+</div>
+</div>
+<!-- Micro Reassurance Support Callout -->
+<div class="bg-surface-container-low rounded-xl p-3 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">headset_mic</span>
+</div>
+<div class="text-left">
+<p class="font-label-md text-label-md text-on-surface">Need immediate help?</p>
+<p class="font-body-sm text-body-sm text-secondary">Chat with Indiranagar Hub Manager</p>
+</div>
+</div>
+<button class="bg-surface-container-lowest text-on-surface px-3 py-1.5 rounded-lg font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+        Connect
+      </button>
+</div>
+</div>
+</div>
+<script>
+  function acknowledgeDelay() {
+    const btn = document.getElementById('ackButton');
+    if (!btn) return;
+    btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span><span>Acknowledged</span>';
+    btn.classList.remove('bg-primary');
+    btn.classList.add('bg-surface-container', 'text-on-surface');
+  }
+</script></main></body></html>
