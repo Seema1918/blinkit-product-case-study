@@ -2,7 +2,7 @@
 
 **A portfolio exploration of trustworthy delivery promises during peak-hour quick commerce.**
 
-Hyperlocal Velocity explores what happens when a 10-minute delivery promise meets real operational conditions: dark-store workload, rider availability, traffic, and the last few meters to a customer's door. Instead of hiding uncertainty behind a single countdown, the experience makes the ETA understandable, updates it early, and gives the customer a predictable alternative.
+This case study explores what happens when a 10-minute delivery promise meets real operational conditions: dark-store workload, rider availability, traffic, and the last few meters to a customer's door. Instead of hiding uncertainty behind a single countdown, the experience makes the ETA understandable, updates it early, and gives the customer a predictable alternative.
 
 > This is an independent portfolio project inspired by a Blinkit delivery experience brief. It is not affiliated with or endorsed by Blinkit. All operational data shown in the prototypes is simulated.
 
